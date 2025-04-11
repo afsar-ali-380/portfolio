@@ -9,15 +9,13 @@ export const Contact = () => {
     message: "",
   });
 
-  const SERVICE_ID = "service_dgzp2cw";
-  const TEMPLATE_ID = "template_r8mzawf";
-  const PUBLIC_KEY = "BItOYWao2hVWjWO26";
+  const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+  const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+  const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
     const form = e.target as HTMLFormElement;
-
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, form, PUBLIC_KEY)
       .then(() => {
@@ -26,6 +24,7 @@ export const Contact = () => {
       })
       .catch(() => alert("Something went wrong. Please try again."));
   };
+
   return (
     <section
       id="contact"
