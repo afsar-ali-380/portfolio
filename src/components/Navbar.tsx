@@ -1,10 +1,8 @@
 import { Dispatch, SetStateAction } from "react";
 
 export const Navbar = ({
-  menuOpen,
   setMenuOpen,
 }: {
-  menuOpen: Boolean;
   setMenuOpen: Dispatch<SetStateAction<Boolean>>;
 }) => {
   return (
