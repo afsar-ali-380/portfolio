@@ -14,12 +14,15 @@ export const Projects = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow[0_2px_8px_rgba(59,130,246,0.1)] transition">
-              <h3 className="text-xl font-bold mb-2">
-                Myntra clone - Frontend Project
-              </h3>
-              <p className="text-gray-300 mb-4">A clone of Myntra website.</p>
+              <h3 className="text-xl font-bold mb-2">Myntra Clone</h3>
+              <p className="text-gray-300 mb-4">
+                A responsive frontend clone of the Myntra e-commerce website,
+                built to replicate its UI and improve development skills in
+                component-based architecture.
+              </p>
               <div className="flex flex-wrap gap-1 mb-2">
-                {["React", "TypeScript", "TailwindCSS", "HTML"].map(
+                <span className="font-medium">Tech Stack:</span>
+                {["React", "TypeScript", "Redux", "TailwindCSS", "HTML"].map(
                   (tech, key) => (
                     <span
                       key={key}
@@ -41,11 +44,14 @@ export const Projects = () => {
             </div>
 
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow[0_2px_8px_rgba(59,130,246,0.1)] transition">
-              <h3 className="text-xl font-bold mb-2">
-                Spotify clone - Frontend Project
-              </h3>
-              <p className="text-gray-300 mb-4">A clone of Myntra website.</p>
+              <h3 className="text-xl font-bold mb-2">Spotify Clone</h3>
+              <p className="text-gray-300 mb-4">
+                A responsive frontend clone of the Spotify web app, built to
+                replicate its user interface and enhance skills in state
+                management using React Context API and modern UI design.
+              </p>
               <div className="flex flex-wrap gap-1 mb-2">
+                <span className="font-medium">Tech Stack:</span>
                 {["React", "TypeScript", "TailwindCSS", "HTML"].map(
                   (tech, key) => (
                     <span
