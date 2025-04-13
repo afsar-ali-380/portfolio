@@ -27,16 +27,16 @@ export const About = () => {
                 <h3 className="text-xl font-bold mb-4">Frontend</h3>
                 <div className="flex flex-wrap gap-2">
                   {frontendSkills.map((tech, key) => (
-                    <div className="flex flex-wrap gap-2 bg-blue-500/10 border border-blue-500/50 rounded py-2 px-3 hover:-translate-y-0.5 transition-all">
+                    <div
+                      key={key}
+                      className="flex flex-wrap gap-2 bg-blue-500/10 border border-blue-500/50 rounded py-2 px-3 hover:-translate-y-0.5 transition-all"
+                    >
                       <img
                         src={tech.img}
                         alt="skill-icon"
                         className="w-7 h-8 object-contain rounded-sm"
                       />
-                      <span
-                        key={key}
-                        className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-[14px] hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)]"
-                      >
+                      <span className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-[14px] hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)]">
                         {tech.skill}
                       </span>
                     </div>
@@ -47,16 +47,16 @@ export const About = () => {
                 <h3 className="text-xl font-bold mb-4">Backend</h3>
                 <div className="flex flex-wrap gap-2">
                   {backendSkills.map((tech, key) => (
-                    <div className="flex flex-wrap gap-2 bg-blue-500/10 border border-blue-500/50 rounded py-2 px-3 hover:-translate-y-0.5 transition-all">
+                    <div
+                      key={key}
+                      className="flex flex-wrap gap-2 bg-blue-500/10 border border-blue-500/50 rounded py-2 px-3 hover:-translate-y-0.5 transition-all"
+                    >
                       <img
                         src={tech.img}
                         alt="skill-icon"
                         className="w-7 h-8 object-contain rounded-sm"
                       />
-                      <span
-                        key={key}
-                        className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-[14px] hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)]"
-                      >
+                      <span className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-[14px] hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)]">
                         {tech.skill}
                       </span>
                     </div>
