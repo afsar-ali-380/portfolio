@@ -35,8 +35,10 @@ export const Projects = () => {
               </div>
               <div className="flex justify-between items-center">
                 <a
-                  href="#"
+                  href="https://afsar-ali-380-myntra-clone.vercel.app/"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                  title="https://afsar-ali-380-myntra-clone.vercel.app/"
+                  target="_blank"
                 >
                   view project ➡️
                 </a>
@@ -65,8 +67,10 @@ export const Projects = () => {
               </div>
               <div className="flex justify-between items-center">
                 <a
-                  href="#"
+                  href="https://afsar-ali-380-spotify-clone.vercel.app/"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                  title="https://afsar-ali-380-spotify-clone.vercel.app/"
+                  target="_blank"
                 >
                   view project ➡️
                 </a>
